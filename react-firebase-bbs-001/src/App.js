@@ -11,8 +11,6 @@ function App() {
         <section className="main_section">
           <Route exact path="/" component={BBsMain} />
           <Route exact path="/write" component={BBsWrite} />
-
-          <BBsWrite />
         </section>
         <Footer />
       </div>
