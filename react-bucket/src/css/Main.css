@@ -1,0 +1,17 @@
+input {
+  width: 95%;
+  padding: 10px;
+  margin: 20px auto;
+}
+table.list {
+  width: 95%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table.list th,
+table.list td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}

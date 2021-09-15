@@ -1,7 +1,9 @@
 # API KEY
 
-FirebaseConfig.js
-BBSconfig.js
+FilrebaseConfig.js
+BBSConfig.js
+mongoConfig.json
+mongoConfig.js
 
 # Logs
 
