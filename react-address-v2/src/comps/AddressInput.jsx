@@ -1,8 +1,10 @@
 import React from "react";
 
-function AddressInput({ address, setAddress }) {
+function AddressInput(props) {
+  const { address, setAddress, list, setList } = props;
   const onChangeHandler = (e) => {
     const { name, value } = e.target;
+
     /** 계산식 속성이름,computed property name
      * 	변수 이름을 변수값으로 생성하기
      * if(e.target.name==="u_name")
@@ -15,13 +17,21 @@ function AddressInput({ address, setAddress }) {
      *
      * CPN : 표현식을 사용하여 객체의 key값을 정의하는 문법이다
      */
-    setAddress({ ...address, [name]: value });
+    setAddress({ ...address, u_name: address.length });
+  };
+  const insert = () => {
+    setList([...list, address]);
   };
   return (
     <div className="input_form">
       <div>
         <label>이름</label>
-        <input name="u_name" type="text" onChange={onChangeHandler} />
+        <input
+          name="u_name"
+          type="text"
+          onChange={onChangeHandler}
+          defaultValue={address.u_name}
+        />
       </div>
       <div>
         <label>주소</label>
@@ -35,6 +45,7 @@ function AddressInput({ address, setAddress }) {
         <label>나이</label>
         <input name="u_age" type="text" onChange={onChangeHandler} />
       </div>
+      <button onClick={insert}>추가</button>
     </div>
   );
 }
