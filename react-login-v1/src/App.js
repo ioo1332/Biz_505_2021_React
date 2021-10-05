@@ -9,7 +9,7 @@ const NavList = [
   { id: 1, title: "공지사항", link: "/notice" },
   { id: 2, title: "자유게시판", link: "/bbs" },
   { id: 3, title: "로그인", link: "/login", align: true },
-  { id: 4, title: "회원가입", link: "/join",to={JoinForm} },
+  { id: 4, title: "회원가입", link: "/join" },
 ];
 
 function App() {
