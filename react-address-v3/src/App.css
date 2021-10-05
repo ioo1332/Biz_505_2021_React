@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 20vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -36,9 +36,57 @@
     transform: rotate(360deg);
   }
 }
-.input_info input {
-}
-.addr_menu table {
-  margin: 0 auto;
+.input_info {
+  width: 50%;
+  margin: 10px auto;
   text-align: center;
+  border: 3px solid #282c34;
+}
+
+.input_info input {
+  width: 90%;
+  margin: 5px auto;
+  border: 0px;
+  border-bottom: 2px solid #282c34;
+  color: rgba(0, 0, 0, 0.4);
+  outline: 0;
+  font-size: 30px;
+}
+
+.input_info button {
+  width: 10%;
+  margin: 15px auto;
+  padding: 5px;
+  border: 1px;
+  color: white;
+  font-size: 20px;
+  background-color: #282c34;
+}
+.input_info button:hover {
+  cursor: pointer;
+}
+
+table {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 30px;
+  border: 3px solid #282c34;
+}
+
+tr:hover {
+  cursor: pointer;
+}
+
+th {
+  background-color: #282c34;
+  color: white;
+  font-weight: 100;
+}
+
+td {
+  padding: 5px;
+}
+td:hover {
+  border-bottom: 1px solid #282c34;
+  background-color: #eee;
 }

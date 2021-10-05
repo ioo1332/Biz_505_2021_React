@@ -9,10 +9,10 @@ function App() {
   // 주소 한개의 데이터를 저장할 state 선언
   const [address, setAddress] = useState({
     a_id: UUID,
-    a_name: "홍길동",
-    a_tle: "010-1111-1111",
-    a_addr: "서울시",
-    a_age: 30,
+    a_name: "",
+    a_tle: "",
+    a_addr: "",
+    a_age: "",
   });
   const [addrBook, setAddrBook] = useState([]);
   const stateGroup = {
@@ -25,7 +25,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h3>REACT 활용 주소록</h3>
+        <h3>REACT 주소록</h3>
       </header>
       <Addressinput stateGroup={stateGroup} />
       <AddressList addrBook={addrBook} />

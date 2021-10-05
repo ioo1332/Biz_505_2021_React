@@ -1,18 +1,20 @@
 import React from "react";
 import UUID from "react-uuid";
 
-function Addressinput({ stateGroup }) {
-  //const { stateGroup } = props;
+function AddressInput({ stateGroup }) {
+  // const { stateGroup } = props;
   const { address, setAddress, addrBook, setAddrBook } = stateGroup;
+
   const onChangeHandler = (e) => {
     const { name, value } = e.target;
     setAddress({ ...address, [name]: value });
   };
 
   const addrBookInsert = () => {
-    setAddrBook({ ...address, a_id: UUID() });
+    setAddress({ ...address, a_id: UUID() });
     setAddrBook([...addrBook, address]);
   };
+
   return (
     <div className="input_info">
       <input
@@ -44,4 +46,4 @@ function Addressinput({ stateGroup }) {
   );
 }
 
-export default Addressinput;
+export default AddressInput;

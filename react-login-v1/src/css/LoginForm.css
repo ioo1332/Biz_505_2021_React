@@ -1,0 +1,25 @@
+.login_form div {
+  width: 50%;
+  margin: 10px auto;
+  padding: 20px;
+  text-align: center;
+  border: 0px solid #282c34;
+}
+.login_form input {
+  width: 50%;
+  margin: 10px auto;
+  color: #282c34;
+  font-size: 30px;
+}
+button {
+  width: 50%;
+  margin: 15px auto;
+  padding: 5px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  color: #ffff;
+  border: none;
+  border-radius: 5px;
+  background-color: #282c34;
+}

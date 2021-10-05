@@ -1,7 +1,8 @@
 import React from "react";
+import "../App.css";
 
 // 비구조화
-// const{addrBook}=props대신 직접분해하면서 받기
+// const {addrBook} = props대신 직접 분해하면서 받기
 function AddressList({ addrBook }) {
   const viewList = addrBook.map((addr, index) => {
     return (
@@ -16,7 +17,7 @@ function AddressList({ addrBook }) {
   });
 
   return (
-    <table className="addr_menu">
+    <table className="addr_list">
       <thead>
         <tr>
           <th>ID</th>
